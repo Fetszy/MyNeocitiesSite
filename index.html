@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#453DB3" />
+  <title>🕯️ Serenith — Giriş / Gateway</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: "Courier New", monospace;
+      background:#000 url("1najm.gif") repeat;
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      cursor:crosshair;
+      text-shadow: 0 0 0 0px;
+      text-shadow: none;
+    }
+    .frame{
+      width:min(980px, 100%);
+      background: rgba(0,0,0,0.9);
+      border: 10px groove #453DB3;
+      border-radius: 28px;
+      box-shadow: 0 0 30px rgba(69, 61, 179, 0.35);
+      padding: 22px;
+      position:relative;
+    }
+    .title{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      text-align:center;
+      margin-bottom: 14px;
+      font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+    .sub{
+      text-align:center;
+      opacity:.9;
+      margin-bottom: 22px;
+      line-height:1.7;
+    }
+    .doors{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .door{
+      background: rgba(69,61,179,0.12);
+      border: 2px solid #820000;
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 160px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      transition:.25s;
+    }
+    .door:hover{
+      transform: translateY(-2px);
+      background: rgba(130,0,0,0.25);
+      border-color:#453DB3;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+    .door h2{
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+text-shadow: 0 0 0 0px;
+      text-shadow: none;
+    }
+    .door p{
+      opacity:.92;
+      line-height:1.7;
+      margin-bottom: 14px;
+      text-shadow: 0 0 0 0px;
+      text-shadow: none;
+    }
+    .btn{
+      display:inline-block;
+      text-align:center;
+      background: linear-gradient(145deg, #453DB3, #2a2465);
+      border: 2px solid #820000;
+      color:#fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .btn:hover{
+      background: linear-gradient(145deg, #820000, #450000);
+      border-color:#453DB3;
+    }
+    .tiny{
+      margin-top: 14px;
+      text-align:center;
+      color:#b2b2b2;
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+    @media(max-width:720px){
+      .doors{grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="title">🕯️ Mahzenime Hoşgeldiniz 🕯️</div>
+    <div class="sub">
+      Bu sayfa sadece bir <b>giriş kapısı</b>.<br/>
+      İçeri iki ayrı dilden girebilirsin.
+    </div>
+
+    <div class="doors">
+      <section class="door">
+        <div>
+          <h2>🇹🇷 /turkish</h2>
+          <p>Türkçe sürüm — yazılar, günceler, şiirler, pullar.</p>
+        </div>
+        <a class="btn" href="turkish/">Türkçe’ye Gir</a>
+      </section>
+
+      <section class="door">
+        <div>
+          <h2>🇬🇧 /english</h2>
+          <p>English version — same layout, you translate the text later.</p>
+        </div>
+        <a class="btn" href="english/">Enter English</a>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
