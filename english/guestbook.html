@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#453DB3" />
+  <title>💬 Guestbook</title>
+  <style>
+    body {
+      margin:0;
+      font-family: "Courier New", monospace;
+      background: #000 url("../1najm.gif") repeat;
+      color: #ddd;
+    }
+    body.is-iframe{ background: transparent !important; }
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    
+    a {
+     color: #7FFFD4;
+      
+    }
+    
+    .panel {
+      background: rgba(0,0,0,0.88);
+      border: 5px groove #453DB3;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 0 30px rgba(69,61,179,0.25);
+    }
+    .topbar {
+      background: rgba(0,0,0,0.85);
+      border: 4px groove #453DB3;
+      border-radius: 14px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      text-align:center;
+    }
+    .topbar a{ color:aquamarine; text-decoration:none; font-weight:bold; }
+    .topbar a:hover{ color:#fff; aquamarine; }
+    .sep{ color:#777; margin:0 10px; }
+    h1{ margin:0 0 10px; font-size: 1.2rem; color:aquamarine; }
+    h2{ margin:18px 0 10px; font-size: 1.05rem; color:#888; }
+    p{ margin: 8px 0 0; line-height:1.4; }
+    .box {
+      border: 2px solid #453DB3;
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(69,61,179,0.08);
+      overflow:hidden;
+    }
+    /* Local guestbook */
+    label{ display:block; margin:8px 0 6px; color:#aaa; }
+    input, textarea {
+      width:100%;
+      box-sizing:border-box;
+      background: rgba(0,0,0,0.7);
+      color:#ddd;
+      border: 2px solid #453DB3;
+      border-radius: 12px;
+      padding: 10px;
+      font-family: inherit;
+      outline:none;
+    }
+    textarea{ min-height: 90px; resize: vertical; }
+    .btnrow{ display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; }
+    button {
+      background: rgba(69,61,179,0.35);
+      border: 2px solid #453DB3;
+      color: aquamarine;
+      padding: 8px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-family:inherit;
+      font-weight:bold;
+    }
+    button:hover{ background: rgba(69,61,179,0.55); color:#fff; aquamarine; }
+    .entries{ margin-top: 12px; }
+    .entry {
+      border: 1px dashed rgba(69,61,179,0.8);
+      border-radius: 12px;
+      padding: 10px;
+      margin: 10px 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .entry .meta{ color:#aaa; font-size: 0.85rem; margin-bottom: 6px; }
+    .muted{ color:#aaa; font-size:0.9rem; }
+  </style>
+  
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="panel">
+    <a href="../english/">← Geri</a>
+      <h1>💬 Guestbook</h1>
+
+      <h2>🌐 Online Comments</h2>
+      <div class="box">
+      
+      
+      
+      </div>
+      </div>
+    </div>
+
+</body>
+</html>
